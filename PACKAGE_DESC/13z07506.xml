@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="packagedesc.xsd">
+	<name>13z07506</name>
+	<description>MDIS5 driver package for MEN Z75 Frequency counter driver</description>
+	<date>2010-04-22</date>
+	<revision>1.5</revision>
+	<docroot>DRIVERS/MDIS_LL/Z075_SPEED/DOC/html/index.html</docroot>
+	<modellist>
+		<model>
+			<hwname>16Z075_SPEED</hwname>
+			<description>Frequency Counter in Chameleon FPGA</description>
+			<devnameprefix>SPEED</devnameprefix>
+			<devtype>MDIS</devtype>
+			<autoid>
+				<chamunitid>0x35</chamunitid>
+				<chamv2id>75</chamv2id>
+			</autoid>
+			<bbslot>
+				<bbismodel>CHAMELEON</bbismodel>
+			</bbslot>
+			<bbslot>
+				<bbismodel>CHAMELEON_PCITBL</bbismodel>
+			</bbslot>
+		</model>
+	</modellist>
+	<settinglist>
+		<setting>
+			<name>Z075_SYSCLK</name>
+			<description>FPGA system core clock</description>
+			<type>U_INT32</type>
+			<defaultvalue>33000000</defaultvalue>
+		</setting>
+		<setting>
+			<name>Z075_RESOLUTION</name>
+			<description>Resolution of frequency measurement</description>
+			<type>U_INT32</type>
+			<defaultvalue>0</defaultvalue>
+			<choises>
+				<choise>
+					<value>0</value>
+					<description>Level 0</description>
+				</choise>
+				<choise>
+					<value>1</value>
+					<description>Level 1</description>
+				</choise>
+				<choise>
+					<value>2</value>
+					<description>Level 2</description>
+				</choise>
+				<choise>
+					<value>3</value>
+					<description>Level 3</description>
+				</choise>
+				<choise>
+					<value>4</value>
+					<description>Level 4</description>
+				</choise>
+				<choise>
+					<value>5</value>
+					<description>Level 5</description>
+				</choise>
+				<choise>
+					<value>6</value>
+					<description>Level 6</description>
+				</choise>
+				<choise>
+					<value>7</value>
+					<description>Level 7</description>
+				</choise>
+			</choises>
+		</setting>
+		<setting>
+			<name>Z075_A_UPPER_LIMIT</name>
+			<description>Upper limit for automatic mode</description>
+			<type>U_INT32</type>
+			<defaultvalue>0xFFFFFFFF</defaultvalue>
+		</setting>
+		<setting>
+			<name>Z075_A_LOWER_LIMIT</name>
+			<description>Lower limit for automatic mode</description>
+			<type>U_INT32</type>
+			<defaultvalue>0</defaultvalue>
+		</setting>
+	</settinglist>
+	<swmodulelist>
+		<swmodule>
+			<name>z75</name>
+			<description>Driver for Z75_SPEED</description>
+			<type>Low Level Driver</type>
+			<makefilepath>Z075_SPEED/DRIVER/COM/driver.mak</makefilepath>
+		</swmodule>
+		<swmodule internal="false">
+			<name>z75_simp</name>
+			<description>Example program for Z075</description>
+			<type>Driver Specific Tool</type>
+			<makefilepath>Z075_SPEED/EXAMPLE/Z75_SIMP/COM/program.mak</makefilepath>
+		</swmodule>
+	</swmodulelist>
+</package>
