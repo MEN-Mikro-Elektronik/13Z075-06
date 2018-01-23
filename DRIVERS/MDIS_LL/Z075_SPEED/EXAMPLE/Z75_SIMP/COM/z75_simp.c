@@ -162,7 +162,7 @@ int main(int argc, char *argv[])
 		PrintError("setstat Z075_RESOLUTION (out of range?)");
 		goto abort;
 	} else {
-		printf("resolution set to %d\n", resolution);
+		printf("resolution set to %d\n", (int)resolution);
 	}
 
 
