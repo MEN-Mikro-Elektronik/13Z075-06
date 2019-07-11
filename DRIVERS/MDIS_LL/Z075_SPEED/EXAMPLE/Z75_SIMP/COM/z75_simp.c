@@ -13,24 +13,9 @@
  *
  *     Required: libraries: mdis_api
  *     \switches (none)
- */
- /*-------------------------------[ History ]--------------------------------
- *
- * $Log: z75_simp.c,v $
- * Revision 1.3  2010/04/22 11:06:51  amorbach
- * R: Porting to MDIS5
- * M: changed according to MDIS Porting Guide 0.8
- *
- * Revision 1.2  2006/10/18 13:34:39  cs
- * added command line option to set resolution of counters
- *
- * Revision 1.1  2006/02/21 13:54:12  rla
- * Initial Revision
- *
  *---------------------------------------------------------------------------
  * Copyright 2010-2019, MEN Mikro Elektronik GmbH
  ****************************************************************************/
-
  /*
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -56,8 +41,6 @@
 #include <MEN/usr_utl.h>
 #include <MEN/mdis_api.h>
 #include <MEN/z75_drv.h>
-
-static const char IdentString[]=MENT_XSTR(MAK_REVISION);
 
 /*--------------------------------------+
 |   DEFINES                             |
