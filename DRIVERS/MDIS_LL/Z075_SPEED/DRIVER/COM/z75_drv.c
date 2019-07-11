@@ -3,8 +3,6 @@
  *        \file  z75_drv.c
  *
  *      \author  rla
- *        $Date: 2010/04/22 11:06:07 $
- *    $Revision: 1.4 $
  *
  *      \brief   Low-level driver for Z75 module
  *
@@ -29,10 +27,32 @@
  * Initial Revision
  *
  *---------------------------------------------------------------------------
- * (c) Copyright 2010 by MEN Mikro Elektronik GmbH, Nuernberg, Germany
+ * Copyright 2010-2019, MEN Mikro Elektronik GmbH
  ****************************************************************************/
 
+ /*
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
 #include "z75_int.h"
+
+
+#ifdef MAC_BYTESWAP
+    static const char IdentString[]=MENT_XSTR_SFX(MAK_REVISION,Z75 swapped);
+#else
+    static const char IdentString[]=MENT_XSTR_SFX(MAK_REVISION,Z75 nonswapped);
+#endif
 
 
 /****************************** Z75_GetEntry ********************************/
@@ -808,14 +828,7 @@ static int32 Z75_Info(
  */
 static char* Ident( void )
 {
-    return( "Z75 - Z75 low-level driver: "
-#ifdef MAC_BYTESWAP
-    "swapped "
-#else
-    "non swapped "
-#endif
-"$Id: z75_drv.c,v 1.4 2010/04/22 11:06:07 amorbach Exp $" );
-
+	return( (char*) IdentString );
 }
 
 /********************************* Cleanup *********************************/

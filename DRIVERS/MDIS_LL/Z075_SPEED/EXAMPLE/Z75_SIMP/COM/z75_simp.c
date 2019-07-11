@@ -6,8 +6,6 @@
 /*!
  *         \file z75_simp.c
  *       \author rla
- *        $Date: 2010/04/22 11:06:51 $
- *    $Revision: 1.3 $
  *
  *       \brief  Simple example program for the Z75 driver
  *
@@ -30,10 +28,24 @@
  * Initial Revision
  *
  *---------------------------------------------------------------------------
- * (c) Copyright 2010 by MEN mikro elektronik GmbH, Nuernberg, Germany
+ * Copyright 2010-2019, MEN Mikro Elektronik GmbH
  ****************************************************************************/
 
-static const char RCSid[]="$Id: z75_simp.c,v 1.3 2010/04/22 11:06:51 amorbach Exp $";
+ /*
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
 
 #include <stdio.h>
 #include <string.h>
@@ -44,6 +56,8 @@ static const char RCSid[]="$Id: z75_simp.c,v 1.3 2010/04/22 11:06:51 amorbach Ex
 #include <MEN/usr_utl.h>
 #include <MEN/mdis_api.h>
 #include <MEN/z75_drv.h>
+
+static const char IdentString[]=MENT_XSTR(MAK_REVISION);
 
 /*--------------------------------------+
 |   DEFINES                             |
