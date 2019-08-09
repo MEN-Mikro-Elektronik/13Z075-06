@@ -4,11 +4,6 @@
 #
 #    Description: Makefile definitions for the Z75 driver, swapped variant
 #
-#---------------------------------[ History ]---------------------------------
-#
-#   $Log: driver_sw.mak,v $
-#   Revision 1.1  2006/02/21 13:54:07  rla
-#   Initial Revision
 #
 #-----------------------------------------------------------------------------
 #   Copyright 2006-2019, MEN Mikro Elektronik GmbH

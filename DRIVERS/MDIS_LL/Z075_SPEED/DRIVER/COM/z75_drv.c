@@ -9,22 +9,6 @@
  *     Required: OSS, DESC, DBG, ID libraries
  *
  *     \switches _ONE_NAMESPACE_PER_DRIVER_
- */
- /*-------------------------------[ History ]--------------------------------
- *
- * $Log: z75_drv.c,v $
- * Revision 1.4  2010/04/22 11:06:07  amorbach
- * R: Porting to MDIS5
- * M: changed according to MDIS Porting Guide 0.8
- *
- * Revision 1.3  2006/06/14 09:53:48  rla
- * added Default values for Descriptors
- *
- * Revision 1.2  2006/02/21 14:21:26  rla
- * changed IRQ return value
- *
- * Revision 1.1  2006/02/21 13:54:03  rla
- * Initial Revision
  *
  *---------------------------------------------------------------------------
  * Copyright 2010-2019, MEN Mikro Elektronik GmbH

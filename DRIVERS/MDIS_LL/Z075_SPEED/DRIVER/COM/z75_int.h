@@ -10,23 +10,6 @@
  *
  *    \switches  _ONE_NAMESPACE_PER_DRIVER_
  *               _LL_DRV_
- */
- /*-------------------------------[ History ]--------------------------------
- *
- * $Log: z75_int.h,v $
- * Revision 1.4  2010/04/22 11:06:23  amorbach
- * R: Porting to MDIS5
- * M: changed according to MDIS Porting Guide 0.8
- *
- * Revision 1.3  2006/06/14 09:53:50  rla
- * added Default values for Descriptors
- *
- * Revision 1.2  2006/06/01 17:09:36  cs
- * changed ADDRSPACE_SIZE to 16 (Chameleon BBIS reports real size)
- *
- * Revision 1.1  2006/02/21 13:54:05  rla
- * Initial Revision
- *
  *
  *---------------------------------------------------------------------------
  * Copyright 2010-2019, MEN Mikro Elektronik GmbH

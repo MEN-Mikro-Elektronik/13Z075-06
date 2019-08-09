@@ -10,17 +10,6 @@
  *
  *    \switches  _ONE_NAMESPACE_PER_DRIVER_
  *               _LL_DRV_
- */
- /*-------------------------------[ History ]--------------------------------
- *
- * $Log: z75_drv.h,v $
- * Revision 3.2  2010/04/22 11:08:00  amorbach
- * R: driver ported to MDIS5, new MDIS_API and men_typs
- * M: for backward compatibility to MDIS4 optionally define new types
- *
- * Revision 3.1  2006/02/21 13:54:14  rla
- * Initial Revision
- *
  *
  *---------------------------------------------------------------------------
  * Copyright 2010-2019, MEN Mikro Elektronik GmbH
