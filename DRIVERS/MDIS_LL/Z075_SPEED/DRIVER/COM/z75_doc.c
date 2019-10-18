@@ -219,23 +219,6 @@
 
 	\subsection z75_simp  Simple example for using the driver
 	z75_simp.c (see example section)
-
-	\subsection z075_speed_min   Minimum descriptor
-	z075_speed_min.dsc
-	demonstrates the minimum set of options necessary for using the driver.
-
-	\subsection z075_speed_max   Maximum descriptor
-	z075_speed_max.dsc
-	shows all possible configuration options for this driver.
-
-	\subsection z075_speed_sw_min   Minimum descriptor (swapped variant)
-	z075_speed_sw_min.dsc
-	demonstrates the minimum set of options necessary for using the driver.
-
-	\subsection z075_speed_sw_max   Maximum descriptor (swapped variant)
-	z075_speed_sw_max.dsc
-	shows all possible configuration options for this driver.
-
 */
 
 /** \example z75_simp.c
